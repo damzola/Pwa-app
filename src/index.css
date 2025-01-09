@@ -1,0 +1,28 @@
+.theme{
+    background-image: url("/public/image/pwa-app2.png");
+    background-size: cover;
+    /* height: 1000px; */
+    color: #fff;
+}
+.theme-home{
+    background-color: rgb(1, 26, 71);
+    border-radius: 4px;
+}
+.theme-latest-bg{
+    
+    background-image: url("/public/image/pwa-app.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+    padding: 10px;
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+}
+div h1{
+    font-size: 47px;
+    color: rgba(7, 115, 61, 0.929);
+    font-family: arial black ;
+}
