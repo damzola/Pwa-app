@@ -17,12 +17,28 @@
     padding: 10px;
 }
 img{
-    width: 150px;
-    height: 150px;
+    width: 400px;
+    height: 350px;
     border-radius: 4px;
+    padding: 2px;
+}
+img:hover{
+    border-radius: 7px;
+    border: 1px solid #898888;
 }
 div h1{
     font-size: 47px;
-    color: rgba(7, 115, 61, 0.929);
+    color: #fff;
     font-family: arial black ;
+    text-transform: capitalize;
+}
+.theme-search{
+    /* background-image: url('/public/image/pwa-app3.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255, 0.2);
+    box-shadow: 1px 3px 2px rgb(83, 69, 69);
+    color: #fff;
+    padding: 10px;
+    
 }
