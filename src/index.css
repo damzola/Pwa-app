@@ -34,7 +34,7 @@ h1{
     font-size: 30px;
     font-family: arial black ;
     text-transform: capitalize;
-    background-image: linear-gradient(280deg, blue, rgb(148, 136, 4), rgb(116, 67, 67));
+    background-image: linear-gradient(280deg, rgb(0, 0, 243), rgb(182, 167, 7), rgb(177, 96, 96));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

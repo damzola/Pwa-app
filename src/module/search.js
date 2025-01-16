@@ -23,9 +23,10 @@ function Search(){
         <>
         <div className="theme ">
             <div className="container-fluid">            
-            <h1>Search page</h1>
+            <h1>Search Outcome</h1>
             {loading && <p>Loading...</p>}
       {error && <p>{error}</p>}
+
       {!loading && !search.length && <p>No results found</p>}
       <div className="container">
   <div className="row g-3">
@@ -38,7 +39,7 @@ function Search(){
             <Link to={index.volumeInfo.infoLink} target="_blank" rel="noopener noreferrer">
               <img
                 className="img-fluid rounded img-thumb " 
-                src={index.volumeInfo.imageLinks?.thumbnail || 'fallback-image-url'}
+                src={index.volumeInfo.imageLinks?.thumbnail || 'No Image'}
                 alt={index.volumeInfo.title}
               />
             </Link>
@@ -49,28 +50,6 @@ function Search(){
     ))}
   </div>
 </div>
-
-
-      {/* {search.map((index)=>(
-        <div className=" container-fluid">        
-          <div className="row g-2" key={index.id}> 
-            <div className="col-lg-4 col-md-6 col-sm-sm">
-                         
-            <div className=" card  h-100">
-                <h4 className=" card-header">Title: {index.volumeInfo.title}</h4>
-                <div className="card-body ">
-                    Page cover
-                    <Link to={index.volumeInfo.infoLink} target="_head">
-                    <img className="img-thumb img-fluid rounded" src={index.volumeInfo.imageLinks.thumbnail} alt="kkk" />
-                    </Link>
-                    
-                </div>
-                <p className="card-footer">Author: {index.volumeInfo.authors?.join(", ") || "Unknow"}</p>
-            </div>
-            </div> 
-            </div>
-            </div>
-      ))} */}
           
             
             </div>
