@@ -7,7 +7,7 @@ function Heading(){
   const handleSearch=(e)=>{ 
     e.preventDefault();
     if(searchQuery.trim()){
-        navigate(`/search/result?searchQuery=${encodeURIComponent(searchQuery)}`);
+        navigate(`/search?searchQuery=${encodeURIComponent(searchQuery)}`);
     }
 
 }
@@ -31,17 +31,9 @@ function Heading(){
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
-              {/* <ul className="navbar-nav">
-                <li className="nav-item">
-                  <Link className="nav-link" to="/">Home</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/book">Books</Link>
-                </li>
-              </ul> */}
-           
+                       
             <form className="ms-auto" onSubmit={handleSearch}>
-          <div className="input-group">
+          <div className="input-group mt-1">
             <input
               type="search"
               placeholder="Search For Something"

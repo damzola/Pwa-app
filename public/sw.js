@@ -9,7 +9,10 @@ this.addEventListener("install", (e)=>{
             '/favicon.ico',
             '/image/wind.png',
             '/static/media/pwa-app2.7f3ac081e5b75ea85133.png',
+            '/static/js/main.911cd315.js',
             '/image/reading.jpg',
+            '/search',
+            '/static/css/main.e5b6636a.css',
         ])
         }).catch((err) => {
             console.error("Cache addAll failed:", err);
@@ -19,15 +22,12 @@ this.addEventListener("install", (e)=>{
 
 this.addEventListener("fetch", (event)=>{
     if(!navigator.onLine){
-        console.log("we are offline");
         event.respondWith(
             caches.match(event.request).then((res)=>{
                 if(res){
-                    return res;
-                }  
-                let requestId = event.request.clone();
+                    return res;}  
+                let requestId = event.request;
                     fetch(requestId)
-
                 return fetch(event.request).catch(()=>{
                     return new Response("An error as occured", {
                         status:500,

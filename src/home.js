@@ -5,7 +5,7 @@ function Home() {
   const [book, setBook] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [showAll, setShowAll] = useState({});
-  const [mode, setMode] = useState('onlne');
+  const [mode, setMode] = useState('online');
   const maxnumber = 100;
 
 
@@ -55,7 +55,6 @@ function Home() {
 
   const handleChangePage = (itemperpage) => {
     setCurrentPage(itemperpage);
-    // console.log("page changing", itemperpage);
   };
   const total = Math.ceil(book.length / itemperpage);
 
@@ -73,7 +72,7 @@ function Home() {
             {
               mode === 'offline'? 
               <div >
-                <h3 className="text-center text-warning  ">You're in the offline mode now, </h3><i className="text-danger text-end">Check your network connection</i>
+                <p className="text-center text-warning  ">You're using the offline mode  <i className=" text-end">Check your network connection</i></p>
                 
               </div>: null
             }

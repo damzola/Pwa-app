@@ -7,7 +7,7 @@ function Search(){
     const [search, setSearch] = useState([]);
     const query = new URLSearchParams(location.search).get('searchQuery') || '';
     const [error, setError] = useState(null);
-    const [loading, setLoading] = useState(false) 
+    const [loading, setLoading] = useState(true) 
     useEffect(()=>{
         if(query){
           axios.get(`https://www.googleapis.com/books/v1/volumes?q=${query}&key=AIzaSyDSlj2MHXFdMeq2Yg7lr4ZBT_6wzdWkcdk`).then((res)=>{
@@ -24,10 +24,8 @@ function Search(){
         <div className="theme ">
             <div className="container-fluid">            
             <h1>Search Outcome</h1>
-            {loading && <p>Loading...</p>}
+           {loading === true? <p>loading...</p>: null}
       {error && <p>{error}</p>}
-
-      {!loading && !search.length && <p>No results found</p>}
       <div className="container">
   <div className="row g-3">
     {search.map((index) => (
