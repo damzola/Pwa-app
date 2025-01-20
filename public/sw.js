@@ -9,15 +9,15 @@ this.addEventListener("install", (e)=>{
             '/favicon.ico',
             '/image/wind.png',
             '/static/media/pwa-app2.7f3ac081e5b75ea85133.png',
-            '/static/js/main.911cd315.js',
+            '/static/css/main.e5b6636a.css',
             '/image/reading.jpg',
             '/search',
-            '/static/css/main.e5b6636a.css',
+            '/static/js/main.d5f47dcd.js',
         ])
         }).catch((err) => {
             console.error("Cache addAll failed:", err);
           })      
-    )
+    ) 
 })
 
 this.addEventListener("fetch", (event)=>{

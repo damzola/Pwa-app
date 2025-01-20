@@ -72,7 +72,7 @@ function Home() {
             {
               mode === 'offline'? 
               <div >
-                <p className="text-center text-warning  ">You're using the offline mode  <i className=" text-end">Check your network connection</i></p>
+                <p className="text-center alert alert-warning  ">You're using the offline mode  <i className=" text-end">Check your network connection</i></p>
                 
               </div>: null
             }
