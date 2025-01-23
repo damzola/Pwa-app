@@ -6,4 +6,4 @@ export default function SwDevlop(){
     }).catch((err)=>{
         console.log("SW registration fail", err);
     });
-}
+} 

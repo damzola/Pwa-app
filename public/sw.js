@@ -3,12 +3,12 @@ this.addEventListener("install", (e)=>{
     e.waitUntil(
         caches.open(cacheValue).then((cache)=>{
           return cache.addAll([
-            '/',
+            '/', 
             '/static/js/bundle.js',
             '/index.html',
             '/favicon.ico',
             '/image/wind.png',
-            '/static/media/pwa-app2.7f3ac081e5b75ea85133.png',
+            '/static/media/pwa-app2.7f3ac081e5b75ea85133.png', 
             '/static/css/main.e5b6636a.css',
             '/image/reading.jpg',
             '/search',
